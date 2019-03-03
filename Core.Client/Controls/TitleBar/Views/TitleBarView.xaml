@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Core.Client.Controls.TitleBar.Views.TitleBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModel="clr-namespace:Core.Client.Controls.TitleBar.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance viewModel:TitleBarViewModel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Content="{Binding Title}" Foreground="White"
+               Margin="10,0,0,0"/>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <Button Width="35" Style="{DynamicResource WindowsButton}" Command="{Binding MinimizeCommand}">
+                <Image Source="../../../Styles/Icons/minimize.png"/>
+            </Button>
+            <Button Width="35" Style="{DynamicResource WindowsButton}" Command="{Binding ChangeWindowStateCommand}">
+                <Image Source="../../../Styles/Icons/maximize.png"/>
+            </Button>
+            <Button Width="35" Style="{DynamicResource WindowsButton}" Command="{Binding CloseCommand}">
+                <Image Source="../../../Styles/Icons/close.png"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

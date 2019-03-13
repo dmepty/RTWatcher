@@ -62,8 +62,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Common\BaseViewModelWithView.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Views\MainView.xaml.cs">
+    <Compile Include="MainWindow\ViewModels\MainViewModel.cs" />
+    <Compile Include="MainWindow\Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -92,19 +92,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\MainView.xaml">
+    <Page Include="MainWindow\Views\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
-      <Project>{be3e8e1e-000f-4405-b476-0989376f1f73}</Project>
-      <Name>Core.Client</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{70816fbb-b9cf-444c-8673-4cdb72e8e81d}</Project>
       <Name>Core</Name>

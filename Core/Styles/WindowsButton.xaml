@@ -10,12 +10,12 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <SolidColorBrush x:Key="Button.Static.Background" Color="#1E1E1E"/>
-    <SolidColorBrush x:Key="Button.Static.Border" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="Button.Static.Background" Color="#2D2D30"/>
+    <SolidColorBrush x:Key="Button.Static.Border" Color="#2D2D30"/>
     <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#3f3f3f"/>
-    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#2D2D30"/>
     <SolidColorBrush x:Key="Button.Pressed.Background" Color="#007acc"/>
-    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="#2D2D30"/>
     <Style x:Key="WindowsButton" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>

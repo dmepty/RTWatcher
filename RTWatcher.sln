@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTWatcher", "RTWatcher\RTWa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{70816FBB-B9CF-444C-8673-4CDB72E8E81D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Client", "Core.Client\Core.Client.csproj", "{BE3E8E1E-000F-4405-B476-0989376F1F73}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCore", "AppCore", "{9B360DF5-2438-4BBF-A82A-EC9B37CE678E}"
 EndProject
 Global
@@ -25,17 +23,12 @@ Global
 		{70816FBB-B9CF-444C-8673-4CDB72E8E81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70816FBB-B9CF-444C-8673-4CDB72E8E81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70816FBB-B9CF-444C-8673-4CDB72E8E81D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE3E8E1E-000F-4405-B476-0989376F1F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE3E8E1E-000F-4405-B476-0989376F1F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE3E8E1E-000F-4405-B476-0989376F1F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE3E8E1E-000F-4405-B476-0989376F1F73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{70816FBB-B9CF-444C-8673-4CDB72E8E81D} = {9B360DF5-2438-4BBF-A82A-EC9B37CE678E}
-		{BE3E8E1E-000F-4405-B476-0989376F1F73} = {9B360DF5-2438-4BBF-A82A-EC9B37CE678E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6202AFA9-1FB2-4672-AC34-512184C28A52}

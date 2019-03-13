@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using Core.Client.Controls.TitleBar.ViewModels;
+﻿using System.Windows;
+using Core.Controls.TitleBar.ViewModels;
 using Ninject;
-using RTWatcher.ViewModels;
-using RTWatcher.Views;
+using RTWatcher.MainWindow.ViewModels;
+using RTWatcher.MainWindow.Views;
 
 namespace RTWatcher
 {

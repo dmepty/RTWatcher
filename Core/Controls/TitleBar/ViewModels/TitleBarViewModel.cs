@@ -1,7 +1,7 @@
 ﻿using Core.Commands;
 using Core.Common;
 
-namespace Core.Client.Controls.TitleBar.ViewModels
+namespace Core.Controls.TitleBar.ViewModels
 {
     /// <summary>
     /// ViewModel of title bar.

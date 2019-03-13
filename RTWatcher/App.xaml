@@ -5,7 +5,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Core.Client;component/Styles/WindowsButton.xaml"/>
+                <ResourceDictionary Source="/Core;component/Styles/WindowsButton.xaml"/>
+                <ResourceDictionary Source="/Core;component/Styles/MenuStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

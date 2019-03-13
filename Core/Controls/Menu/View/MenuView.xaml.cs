@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Core.Client.Controls.TitleBar.Views
+namespace Core.Controls.Menu.View
 {
     /// <summary>
-    /// Interaction logic for TitleBar.xaml
+    /// Interaction logic for MenuView.xaml
     /// </summary>
-    public partial class TitleBar : UserControl
+    public partial class MenuView : UserControl
     {
-        public TitleBar()
+        public MenuView()
         {
             InitializeComponent();
         }

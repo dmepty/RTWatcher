@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RTWatcher.Views
+namespace Core.Controls.TitleBar.Views
 {
     /// <summary>
-    /// Interaction logic for MainView.xaml
+    /// Interaction logic for TitleBar.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class TitleBar : UserControl
     {
-        public MainView()
+        public TitleBar()
         {
             InitializeComponent();
-        }
-
-        private void TitleBarMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                Application.Current.MainWindow?.DragMove();
-            }
         }
     }
 }

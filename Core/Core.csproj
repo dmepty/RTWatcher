@@ -31,19 +31,68 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Common\BaseViewModel.cs" />
+    <Compile Include="Controls\HighlightableTextBlock.cs" />
+    <Compile Include="Controls\Menu\Models\MenuItem.cs" />
+    <Compile Include="Controls\Menu\Models\SubmenuItem.cs" />
+    <Compile Include="Controls\Menu\ViewModels\MenuViewModel.cs" />
+    <Compile Include="Controls\Menu\View\MenuView.xaml.cs">
+      <DependentUpon>MenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitleBar\ViewModels\TitleBarViewModel.cs" />
+    <Compile Include="Controls\TitleBar\Views\TitleBarView.xaml.cs">
+      <DependentUpon>TitleBarView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\Menu\View\MenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TitleBar\Views\TitleBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\MenuStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\WindowsButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Icons\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Icons\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Icons\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Icons\openFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Icons\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
